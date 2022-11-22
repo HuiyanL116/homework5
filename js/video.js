@@ -1,13 +1,18 @@
 // Add js here.
-var vid = document.querySelector('#video').autoplay = false.removeAttribute("loop");
-var play = document.querySelector('#play');
-var pause = document.getElementById("pause");
+const vid = document.getElementById('videoplayer').autoplay = false.removeAttribute('loop');
 
 function playVid() {
+    alert('haha');
     vid.play();
+    
 }
-play.addEventListener("click", playVid);
+
 
 function pauseVid() {
     vid.pause();
+    alert('haha');
 }
+
+document.getElementById('play').addEventListener('click', playVid);
+document.getElementById('pause').addEventListener('click', pauseVid);
+document.getElementById('play').addEventListener('click', alert('haah'));
